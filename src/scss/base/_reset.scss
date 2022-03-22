@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: $font;
+    scroll-behavior: smooth;
+    /* cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur817.cur), auto !important; */
+}
+
+body, html {
+    overflow-x:hidden;
+    
+}
+
+body {
+    background: $dark-color;
+    background-size:cover;
+    background-attachment: fixed;
+}
+::selection {
+    background-color: $sec-color;
+    color: $text-color;
+}
+
+span {
+    display: block;
+}

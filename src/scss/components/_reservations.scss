@@ -1,0 +1,52 @@
+
+
+#reservations {
+    margin-bottom:130px;
+
+    .column {
+        height:150px;
+        padding:20px;
+
+        .rsv-text {
+            @include brand-captions;
+            color: $text-color;
+            margin-bottom: 24px;
+            letter-spacing:5px;
+            margin-left:60px;
+            margin-top: 30px;
+        }
+
+        .rsv-title {
+            font-family: $brand-font;
+            font-size:60px;
+            color: $text-color;
+            margin-bottom:240px;
+            line-height:65px;
+            transform: translate(0,-40px);
+        }
+
+        button {
+            @include form-button;
+        }
+
+        input{
+            width:100%;
+            padding:10px;
+            background:none;
+            border:1px solid $text-color;
+        }
+
+        input[placeholder] {
+            color: $text-color;
+            font-size:10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 0;
+            opacity:1;
+        }
+
+        input:focus {
+            outline: none;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+#events-carousel {
+    margin-bottom:300px;
+
+    .event-text {
+        @include brand-captions;
+        color: $text-color;
+        text-align: center;
+        margin-bottom: 40px;
+        letter-spacing:10px;
+        margin-right:-10px;
+    }
+
+    .event-title {
+        font-family: $brand-font;
+        font-size:60px;
+        color: $text-color;
+        text-align: center;
+        margin-bottom:40px;
+        line-height:65px;
+    }
+
+    .event-par {
+        font-size:9px;
+        text-align: center;
+        max-width:300px;
+        color: $text-color;
+        text-transform: uppercase;
+    }
+
+    button {
+        @include button;
+    }
+
+    #main-event {
+        width:825px;
+        height:333px;
+        position: relative;
+        left:75px;
+        background-color: $sec-color;
+        
+
+        img {
+            width:100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    } 
+
+    #main-event:before {
+        content:'';
+        position:absolute;
+        top:0;
+        left:0;
+        background-color: $black;
+        width:100%;
+        height: 100%;
+        opacity: 0.3;
+        z-index:0;
+    }
+
+    #side-event {
+        width:320px;
+        height:397px;
+        position: relative;
+        right:75px;
+        background-color: $main-color;
+        z-index: 1;
+        bottom: -145px;
+
+        .event-text {
+            margin-bottom:25px;
+        }
+    }
+}

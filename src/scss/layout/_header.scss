@@ -1,0 +1,17 @@
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 200;
+nav {
+    height: 200px;
+    position:relative;
+
+        .navbar-brand {
+            font-family: $brand-font;
+            color: $text-color;
+            font-size:50px;
+            text-decoration: none;
+        } 
+} 
+} 

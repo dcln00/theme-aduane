@@ -1,0 +1,47 @@
+#chef-section {
+    margin-bottom:200px;
+
+    #chef-photo {
+        width:573px;
+        height:578px;
+        background-image: url(@/assets/images/image4.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #chef-desc {
+        width:498px;
+        height:497px;
+        margin-left:-80px;
+        background-color: $text-color;
+        padding: 50px;
+
+        .chef-text {
+            @include brand-captions;
+            color: $main-color;
+            margin-bottom: 40px;
+            letter-spacing:5px;
+            margin-right:-5px;
+        }
+    
+        .chef-title {
+            font-family: $brand-font;
+            font-size:60px;
+            color: $main-color;
+            margin-bottom:240px;
+            line-height:65px;
+            transform: translate(-70px,-40px);
+        }
+    
+        .chef-par {
+            font-size:9px;
+            
+            max-width:300px;
+            color: $main-color;
+            text-transform: uppercase;
+        }
+    }
+
+}
+

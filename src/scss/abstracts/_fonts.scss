@@ -1,0 +1,18 @@
+@font-face {
+    font-family: Signature;
+    src: url(/src/assets/fonts/Qhueeny-Signature.otf);
+  }
+
+  @font-face {
+    font-family: Made;
+    src: url(src/assets/fonts/MADE-Light.otf);
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$font: 'Spartan', sans-serif;
+$brand-font: 'Signature';
+$page-desc-font: 'Made';
+
+$ltr-spacing: -0.03em;
+$line-height: 0.9;

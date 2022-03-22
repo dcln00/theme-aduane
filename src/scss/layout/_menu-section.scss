@@ -1,0 +1,46 @@
+#menu-section {
+    margin-bottom:200px;
+
+    #menu-hero {
+        height:500px;
+        background: linear-gradient(90deg, $dark-overlay-color, $dark-overlay-color), url('@/assets/images/image11.jpg');
+        background-size:cover;
+        position:relative;
+
+        .menu-info {
+            position:absolute;
+            left: 0;
+            right: 0;
+        }
+
+        .menu-text {
+            @include brand-captions;
+            letter-spacing: 10px;
+            text-align: center;
+            color: $text-color;
+            margin-bottom:20px;
+            margin-top:100px;
+        }
+
+        .menu-title {
+            font-family: $brand-font;
+            font-size:50px;
+            text-align: center;
+            color:$text-color;
+            margin-bottom: 150px;
+        }
+
+        button {
+            @include button;
+        }
+
+        .col {
+            height:500px;
+        }
+
+        .col-sm:nth-child(1),.col-sm:nth-child(2) {
+            border-right:1px solid $text-color;
+            height:500px;
+        }
+    }
+}

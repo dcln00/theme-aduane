@@ -1,0 +1,45 @@
+#discover {
+    position:relative;
+    margin-bottom:200px;
+    
+    #discover-paragraph {
+        width:820px;
+        height:420px;
+        position: relative;
+        right: 120px;
+        background-color: $black;
+
+        p {
+            display: block;
+            font-size:11px;
+            text-align: justify;
+            max-width:382px;
+            color: $text-color;
+        }
+    } 
+
+    #discover-title {
+        width:400px;
+        height:168px;
+        position: relative;
+        left: 120px;
+        background-color: $main-color;
+        padding-left:40px;
+        padding-top:40px;
+        z-index: 1;
+        bottom: -170px;
+        
+
+        .discover-text {
+            @include brand-captions;
+            letter-spacing: 10px;
+            color:$text-color;   
+        }
+
+        .discover-brand {
+            font-family: $brand-font;
+            font-size:40px;
+            color: $text-color;
+        }
+    }
+}

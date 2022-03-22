@@ -1,0 +1,31 @@
+#contact-actions {
+    margin-bottom: 200px;
+
+    .contact-desc {
+        text-transform: uppercase;
+        font-size:9px;
+        letter-spacing:0;
+        line-height: 23px;
+        display: block;
+        transform: scaleY(0.85);
+        text-align: center;
+        color: $alt-color;
+    }
+
+    .contact-title {
+        text-align: center;
+        font-family: $brand-font;
+        color: $text-color;
+        font-size:40px;
+    }
+
+    .contact-line {
+        height:150px;
+        border-left: 1px solid $main-color;
+        width:0;
+    }
+
+    .call-action, .location-action {
+        width:173px;
+    }
+} 

@@ -1,0 +1,86 @@
+#menu-items {
+    background-color: $text-color;
+    min-height:500px;
+    padding:50px;
+    margin-bottom:200px;
+
+    .flex-child-container {
+        flex-grow: 1;
+    }
+
+    nav {
+        border: none;
+
+        a {
+           @include menu-titles;
+        }
+
+        a:link {
+            border: none;
+        }
+    }
+
+    .nav-link.active   {
+        background:none;
+        border: none;
+        color: $sec-color;
+}
+
+    .tab-content {
+
+        .row {
+            margin-top:40px;
+        }
+
+        .clmn {
+            min-height:600px;
+        }
+
+        .clmn2 {
+            min-height:800px;
+        }
+
+        .clmn3 {
+            min-height:600px;
+        }
+
+        .column {
+            border: 1px solid $alt-color;
+            padding:25px;
+
+            .menu-section-title {
+                @include menu-titles;
+                margin-bottom: 20px;
+            }
+
+            .menu-item, .price {
+                text-transform: uppercase;
+                font-size:10px;
+                font-weight:600;
+            }
+
+            .menu-line {
+                border-bottom: 1px solid $alt-color;
+                width:100%;
+                margin-right: 20px;
+                margin-left: 20px;
+                flex: 1;
+            }
+
+            .menu-line-item-wrap {
+                margin-bottom:10px;
+            }
+
+            .menu-item-paragraph {
+                font-size:10px;
+                max-width:270px;
+            }
+        }
+    }
+
+    .restaurant-terms {
+        @include notice;
+        font-weight:600;
+        margin-top:30px;
+    } 
+}   

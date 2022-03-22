@@ -1,0 +1,16 @@
+@import 'abstracts/fonts';
+@import 'abstracts/colors';
+@import 'abstracts/mixins';
+@import 'components/mobile-menu';
+@import 'base/reset'; 
+//home
+@import 'layout/header';
+@import 'layout/head-section';
+@import 'layout/discover-section';
+@import 'layout/menu-section';
+@import 'layout/events-section';
+@import 'layout/footer';
+//pages
+@import 'pages/menu-page'; 
+@import 'pages/about-page';
+@import 'pages/contact-page';

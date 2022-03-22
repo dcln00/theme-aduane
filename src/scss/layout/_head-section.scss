@@ -1,0 +1,22 @@
+#head {
+    height:100vh;
+   
+       .brand-text {
+           @include brand-captions;
+           text-align: center;
+           color: $main-color;
+       }
+   
+       .page-desc {
+           display:block;
+           text-align: center;
+           font-family: $page-desc-font;
+           font-size:16px;
+           text-transform: uppercase;
+           transform: scaleY(0.9);
+           color: $text-color;
+           letter-spacing:7px;
+           margin-right:-7px;
+           line-height: 35px;
+       }
+   }   

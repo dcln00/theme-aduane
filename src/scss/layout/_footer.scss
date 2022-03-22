@@ -1,0 +1,64 @@
+footer {
+    background-color:$black;
+    min-height:400px;
+    padding-top:50px;
+    padding-bottom:50px;
+
+    .footer-copy {
+        @include brand-captions;
+        color: $main-color;
+        margin-bottom:40px;
+    }
+
+    .footer-line {
+        height:50px;
+        border-left: 1px solid $main-color;
+        margin-left:auto;
+        margin-right:auto;
+        width:0;
+        margin-bottom:40px;
+    }
+
+    .row {
+        margin-bottom:50px;
+    }
+
+    .footer-col-title {
+        @include brand-captions;
+        letter-spacing:2px;
+        margin-right:0px;
+        color: $text-color;
+        text-align: center;
+        font-weight: 600;
+        margin-bottom:20px;
+    }
+
+    .footer-col-desc {
+        text-transform: uppercase;
+        font-size:8px;
+        letter-spacing:0;
+        line-height: 23px;
+        display: block;
+        transform: scaleY(0.85);
+        text-align: center;
+        color: $alt-color;
+    }
+
+    .copyright {
+        @include copyright;
+
+        .credit {
+            @include credit;
+        }
+    }
+
+    .copy-icons {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    i {
+        margin:5px;
+        color:$main-color;
+    }
+}

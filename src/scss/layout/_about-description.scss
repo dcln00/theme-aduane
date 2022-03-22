@@ -1,0 +1,25 @@
+#about-desc {
+    background-color: $text-color;
+    padding-top:50px;
+    padding-bottom:100px;
+    margin-bottom: 200px;
+    position: relative;
+
+    div {
+        display: block;
+        font-size:11px;
+        text-align: justify;
+        max-width:555px;
+        color: $alt-color;
+        position: relative;
+    }
+
+    img {
+        position:absolute;
+        width:100px;
+        bottom: -80px;
+        right: 0;
+    }
+}
+
+  
