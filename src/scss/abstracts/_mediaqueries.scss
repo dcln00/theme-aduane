@@ -138,8 +138,12 @@ $breakpoint-mobile: 576px;
     }
 
     #reservations {
-        min-height:50vh;
         margin-bottom:100px;
+        
+        .frm {
+            min-height:70vh;
+        }
+
         .col-sm-4 {
             margin-bottom:30px;
 

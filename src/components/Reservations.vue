@@ -7,8 +7,8 @@
                         <span class="rsv-title">Reservation</span>
                     </div>
                 </div>
-                <div class="col-sm-6">
-                    <div class="column /bg-primary">
+                <div class="col-sm-6 frm">
+                    <div class="column">
                         <form>
                         <div class="row">
                             <div class="col-sm-4">

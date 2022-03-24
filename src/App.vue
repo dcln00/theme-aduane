@@ -14,7 +14,7 @@ export default {
     components: { Header, Footer, Preloader },
      mounted() {
     let s = document.createElement("script");
-    s.setAttribute("src", "./src/js/script.js");
+    s.setAttribute("src", "/src/js/script.js");
     document.body.appendChild(s);
   }
 }
@@ -22,7 +22,7 @@ export default {
 
 <template>
   <Header />
-<Preloader />
+<!-- <Preloader /> -->
     <main>
       <RouterView />
     </main>
