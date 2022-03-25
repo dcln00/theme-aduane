@@ -7,7 +7,6 @@ import 'animate.css';
 import '@fortawesome/fontawesome-free/css/all.css';
 import LottieAnimation from "lottie-web-vue";
 
-
 const app = createApp(App);
 
 app.use(LottieAnimation);

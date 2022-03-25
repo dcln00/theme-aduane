@@ -14,7 +14,7 @@ export default {
     components: { Header, Footer, Preloader },
      mounted() {
     let s = document.createElement("script");
-    s.setAttribute("src", "/src/js/script.js");
+    s.setAttribute("src", "https://cdn.jsdelivr.net/gh/dcln00/theme-aduane/src/js/script.js");
     s.setAttribute('type','text/javascript');
     document.body.appendChild(s);
   }
