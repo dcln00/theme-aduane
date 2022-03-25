@@ -21,8 +21,8 @@
         <span class="credit">Designed and built by Nii Aryeh x 22 Ayvas</span>
         </span>
         <span class="copy-icons">
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
+            <a href="https://www.twitter.com/fkadcln" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/n.aryeh" target="_blank"><i class="fab fa-instagram"></i></a>
         </span>
         </div>
     </footer>

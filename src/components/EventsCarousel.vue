@@ -46,8 +46,8 @@ export default {
   data(){
         return {
             currentEvents: [
-                {img:'./src/assets/images/image18.jpg', text:'cocktails', firstline:'Camp', secondline:'Barbados', par:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum', button:'Sign up', id:1},
-                {img:'./src/assets/images/image19.jpg', text:'cocktails', firstline:'Boozy', secondline:'Sundays', par:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum', button:'Read More', id:2},
+                {img:'@/assets/images/image18.jpg', text:'cocktails', firstline:'Camp', secondline:'Barbados', par:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum', button:'Sign up', id:1},
+                {img:'@/assets/images/image19.jpg', text:'cocktails', firstline:'Boozy', secondline:'Sundays', par:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum', button:'Read More', id:2},
             ]
         }
     },

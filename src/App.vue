@@ -23,7 +23,7 @@ export default {
 
 <template>
   <Header />
-<!-- <Preloader /> -->
+  <Preloader />
     <main>
       <RouterView />
     </main>
@@ -31,5 +31,13 @@ export default {
 </template>
 
 <style lang="scss">
+i {
+    transition-property:color, transform;
+    transition: 0.5s;
+}
 
+i:hover {
+    color: $sec-color;
+    transform: scale(0.9,0.9);
+}
 </style>

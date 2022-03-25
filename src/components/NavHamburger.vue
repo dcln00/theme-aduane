@@ -20,8 +20,8 @@
             </div>
             <div class="d-flex menu-footer">
                 <span class="copy-icons">
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
+                    <a href="https://www.twitter.com/fkadcln" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/n.aryeh" target="_blank"><i class="fab fa-instagram"></i></a>
                 </span>
                 <hr>
                 <span class="copyright">2022 © Aduane Urban Restaurant. All rights reserved.
