@@ -15,7 +15,7 @@ export default {
      mounted() {
     let s = document.createElement("script");
     s.setAttribute("src", "/src/js/script.js");
-    s.setAttribute('type','text/javascript')
+    s.setAttribute('type','text/javascript');
     document.body.appendChild(s);
   }
 }
