@@ -33,6 +33,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import { EffectFade, Autoplay, Navigation } from "swiper";
+import image18 from '@/assets/images/image18.jpg';
+import image19 from '@/assets/images/image19.jpg';
+
 export default {
     components: {
     Swiper,
@@ -45,9 +48,10 @@ export default {
   },
   data(){
         return {
+            image18, image19,
             currentEvents: [
-                {img:'@/assets/images/image18.jpg', text:'cocktails', firstline:'Camp', secondline:'Barbados', par:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum', button:'Sign up', id:1},
-                {img:'@/assets/images/image19.jpg', text:'cocktails', firstline:'Boozy', secondline:'Sundays', par:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum', button:'Read More', id:2},
+                {img: image18, text:'cocktails', firstline:'Camp', secondline:'Barbados', par:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum', button:'Sign up', id:1},
+                {img: image19, text:'cocktails', firstline:'Boozy', secondline:'Sundays', par:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum', button:'Read More', id:2},
             ]
         }
     },
