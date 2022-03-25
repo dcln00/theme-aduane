@@ -50,24 +50,3 @@ let remove_Classes = function removeClasses() {
 for (i = 0; i < menu_links.length; i++) {
   menu_links[i].addEventListener('click', remove_Classes, false)
 }
-
-//preloader
-
-/* 
-let animation = bodymovin.loadAnimation({
-  container: document.getElementById('preloader'),
-  renderer: 'svg',
-  loop: false,
-  autoplay: true,
-  path: './src/js/data.json',
-  name: 'loader'
-  })
-
- 
-
-animation.addEventListener('complete', function() {
-  let loader = document.getElementById('preloader');
-  loader.classList.add("remove-preload");
-})
-
-   */ 
