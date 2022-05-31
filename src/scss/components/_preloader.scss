@@ -1,5 +1,6 @@
 #preloader {
     background-color: $dark-color;
+    //background-color: red;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -12,6 +13,12 @@
     z-index: 300;
     transition: 1s;
     transition-property: transform, opacity;
+    overflow:hidden;
+
+    .container {
+        width:700px;
+        height:auto;
+    }
 
 }
 

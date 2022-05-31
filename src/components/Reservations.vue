@@ -12,13 +12,36 @@
                         <form>
                         <div class="row">
                             <div class="col-sm-4">
-                                <input type="text" name="name" id="name"  required  autocomplete="off" placeholder="1 person" >
+                                <select class="form-select" aria-label="Default select">
+                                    <option selected disabled>Person</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5">5 People</option>
+                                    <option value="6">6 Or More</option>
+                                </select>
                             </div>
                             <div class="col-sm-4">
-                                <input type="text" name="name" id="name"  required  autocomplete="off" placeholder="select date">
+                                <input placeholder="Date" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
                             </div>
                             <div class="col-sm-4">
-                                <input type="text" name="name" id="name"  required  autocomplete="off" placeholder="time" >
+                                <select class="form-select" aria-label="Default select">
+                                    <option selected disabled>Time</option>
+                                    <option value="1">10:00 am</option>
+                                    <option value="2">11:00 am</option>
+                                    <option value="3">12:00 pm</option>
+                                    <option value="4">1:00 pm</option>
+                                    <option value="5">2:00 pm</option>
+                                    <option value="6">3:00 pm</option>
+                                    <option value="7">4:00 pm</option>
+                                    <option value="8">5:00 pm</option>
+                                    <option value="9">6:00 pm</option>
+                                    <option value="10">7:00 pm</option>
+                                    <option value="11">8:00 pm</option>
+                                    <option value="12">9:00 pm</option>
+                                    <option value="13">10:00 pm</option>
+                                </select>
                             </div>
                         </div>
                         <button type="submit">Reserve a Table</button>

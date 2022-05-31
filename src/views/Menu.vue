@@ -17,7 +17,7 @@ export default {
 
 <template>
     <BackgroundWrapper>
-        <img src="@/assets/images/image7.jpg" :style="style">
+        <img src="@/assets/images/image7.jpg">
     </BackgroundWrapper>
     <HeadSection :firstline="firstline" :secondline="secondline" />
     <MenuItems />

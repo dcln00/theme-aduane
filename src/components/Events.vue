@@ -12,7 +12,7 @@
                     <span class="event-text">cocktails</span>
                     <span class="event-title">Boozy<br>    Sundays</span>
                     <span class="event-par">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonum </span>
-                    <button>Read More</button>
+                     <RouterLink to="/events"><button>Read More</button></RouterLink>
                 </div>
             </div>
         </section>

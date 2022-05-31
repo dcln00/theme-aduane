@@ -1,13 +1,13 @@
 <template>
     <div id="preloader" class="">
-        
+        <div class="container">
        <lottie-animation
         :animationData="animationJSON"
         :loop="false"
         :speed="1"
-        @complete="complete" 
+        @complete="complete"
       />
-
+    </div>
     </div>
 </template>
 

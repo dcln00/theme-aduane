@@ -1,6 +1,14 @@
 #menu-section {
     margin-bottom:200px;
 
+    a {
+        color: $text-color;
+
+        &:hover {
+            color: $text-color;
+        }
+    }
+
     #menu-hero {
         height:500px;
         background: linear-gradient(90deg, $dark-overlay-color, $dark-overlay-color), url('@/assets/images/image11.jpg');

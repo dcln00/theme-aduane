@@ -4,9 +4,10 @@ import About from "../views/About.vue";
 import Menu from "../views/Menu.vue";
 import Contact from "../views/Contact.vue";
 import Events from "../views/Events.vue";
+import NotFound from '../views/404.vue';
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes: [
     {
       path: "/",
@@ -58,8 +59,16 @@ const router = createRouter({
       meta: {
         title:'Events - Theme Aduane | Fine Dining Restaurant Theme',
       }
+    },
+    { 
+      path: '/:catchAll(.*)',
+      name: 'NotFound',
+      component: NotFound,
     }
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+     return { top:0 }
+  }
 });
 
 router.beforeEach((to, from, next) => {

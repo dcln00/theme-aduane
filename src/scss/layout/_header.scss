@@ -7,11 +7,15 @@ nav {
     height: 200px;
     position:relative;
 
-        .navbar-brand {
+        a {
             font-family: $brand-font;
             color: $text-color;
             font-size:50px;
             text-decoration: none;
+
+            &:hover {
+                color: $text-color;
+            }
         } 
 } 
 } 

@@ -4,7 +4,7 @@
                 <div class="menu-info">
                     <span class="menu-text">Make food not war</span>
                 <span class="menu-title">Our Menu</span>
-                <button>View Menu</button>
+                <RouterLink to="/menu"><button>View Menu</button></RouterLink>
                 </div>
                 <div class="row">
                     <div class="col-sm"></div>
@@ -17,4 +17,6 @@
 
 <style lang="scss">
     @import './src/scss/layout/menu-section';
+
+    
 </style>

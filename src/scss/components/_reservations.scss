@@ -29,11 +29,26 @@
             @include form-button;
         }
 
-        input{
+        input, select {
             width:100%;
             padding:10px;
             background:none;
             border:1px solid $text-color;
+            height:37px;
+        }
+
+        select {
+            color: $text-color;
+            font-size:10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 0;
+            opacity:1;
+        }
+
+        option {
+            color: black;
+            border-radius: 0;
         }
 
         input[placeholder] {
@@ -45,8 +60,9 @@
             opacity:1;
         }
 
-        input:focus {
+        input:focus, select:focus, #date {
             outline: none;
+            box-shadow: none;
         }
     }
 }

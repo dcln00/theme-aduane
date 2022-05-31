@@ -1,0 +1,788 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: Signature;
+  src: url(/src/assets/fonts/Qhueeny-Signature.otf);
+}
+@font-face {
+  font-family: Made;
+  src: url(src/assets/fonts/MADE-Light.otf);
+}
+.hamburger {
+  position: absolute;
+  top: 54px;
+  right: 0;
+  display: block;
+  height: 90px;
+  background-color: #00513f;
+  z-index: 100;
+  padding: 0;
+  transition: background-color 0.5s;
+  transform: scale(0.7, 0.7);
+}
+
+.hamburger.is-active {
+  background-color: #004232;
+}
+
+.hamburger:hover {
+  opacity: 1;
+}
+
+.hamburger-box {
+  display: flex;
+  justify-content: center;
+  width: 90px;
+}
+
+.hamburger-inner, .hamburger-inner:before, .hamburger-inner:after {
+  background-color: white;
+  width: 35px;
+}
+
+.hamburger--spin.is-active .hamburger-inner, .hamburger--spin.is-active .hamburger-inner:before, .hamburger--spin.is-active .hamburger-inner:after {
+  background-color: white;
+}
+
+.mobile-nav.is-active {
+  bottom: 0%;
+}
+
+.mobile-nav {
+  position: fixed;
+  left: 0;
+  bottom: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 110;
+  background-color: #0f0f0f;
+  transition: 0.4s;
+  transition-delay: 0.2s;
+  transition-timing-function: ease-in-out;
+  overflow: hidden;
+}
+.mobile-nav .menu-link:nth-child(1) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.mobile-nav .menu-link:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.mobile-nav .menu-link:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.mobile-nav .menu-link:nth-child(4) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+.mobile-nav .menu-link:nth-child(5) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.mobile-nav .row {
+  display: relative;
+}
+.mobile-nav .menu-img {
+  position: relative;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5294117647), rgba(0, 0, 0, 0.5294117647));
+  height: 100vh;
+  overflow: hidden;
+}
+.mobile-nav .menu-img:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 10;
+}
+.mobile-nav .menu-links {
+  padding-top: 200px;
+  height: 100vh;
+}
+.mobile-nav .menu-links .col-sm {
+  margin-bottom: 200px;
+}
+.mobile-nav .menu-links .col-sm ul {
+  counter-reset: li;
+  position: relative;
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 160px;
+       column-gap: 160px;
+  overflow: visible;
+}
+.mobile-nav .menu-links .col-sm ul li {
+  list-style-type: none;
+  color: #ededed;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+  transform: scaleY(1);
+  will-change: transform;
+}
+.mobile-nav .menu-links .col-sm ul li a {
+  text-transform: uppercase;
+  font-family: "Made";
+  color: #ededed;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  transition: transform 0.25s ease-out;
+}
+.mobile-nav .menu-links .col-sm ul li a:hover {
+  transform: scale(1.3, 1.3);
+}
+.mobile-nav .menu-links .col-sm ul li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  background-color: #00513f;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+  z-index: -1;
+}
+.mobile-nav .menu-links .col-sm ul li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.mobile-nav .menu-links .col-sm ul .next-col {
+  position: relative;
+  top: 100px;
+}
+.mobile-nav .menu-links li:before {
+  content: "0" counter(li);
+  counter-increment: li;
+  position: absolute;
+  font-family: "Spartan", sans-serif;
+  top: -28px;
+  left: 0;
+  font-size: 8px;
+}
+.mobile-nav .menu-footer {
+  margin-left: 30px;
+  position: absolute;
+  bottom: 40px;
+}
+.mobile-nav .menu-footer .copy-icons {
+  font-size: 10px;
+  padding-top: 7px;
+  margin-right: 14px;
+}
+.mobile-nav .menu-footer i {
+  margin: 5px;
+  color: #00513f;
+}
+.mobile-nav .menu-footer hr {
+  width: 40px;
+  height: 1px;
+  opacity: 1;
+  color: #00513f;
+  margin-right: 30px;
+}
+.mobile-nav .menu-footer .copyright {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 8px;
+  transform: scaleY(0.85);
+  color: #00513f;
+  margin-bottom: 10px;
+  padding-top: 11px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+  scroll-behavior: smooth;
+  /* cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur817.cur), auto !important; */
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+body {
+  background: #0f0f0f;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+::-moz-selection {
+  background-color: #004232;
+  color: #ededed;
+}
+
+::selection {
+  background-color: #004232;
+  color: #ededed;
+}
+
+span {
+  display: block;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+header nav {
+  height: 200px;
+  position: relative;
+}
+header nav .navbar-brand {
+  font-family: "Signature";
+  color: #ededed;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+#head {
+  height: 100vh;
+}
+#head .brand-text {
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 20px;
+  margin-right: -20px;
+  display: block;
+  transform: scaleY(0.85);
+  text-align: center;
+  color: #00513f;
+}
+#head .page-desc {
+  display: block;
+  text-align: center;
+  font-family: "Made";
+  font-size: 16px;
+  text-transform: uppercase;
+  transform: scaleY(0.9);
+  color: #ededed;
+  letter-spacing: 7px;
+  margin-right: -7px;
+  line-height: 35px;
+}
+
+#discover {
+  position: relative;
+  margin-bottom: 200px;
+}
+#discover #discover-paragraph {
+  width: 820px;
+  height: 420px;
+  position: relative;
+  right: 120px;
+  background-color: #000;
+}
+#discover #discover-paragraph p {
+  display: block;
+  font-size: 11px;
+  text-align: justify;
+  max-width: 382px;
+  color: #ededed;
+}
+#discover #discover-title {
+  width: 400px;
+  height: 168px;
+  position: relative;
+  left: 120px;
+  background-color: #00513f;
+  padding-left: 40px;
+  padding-top: 40px;
+  z-index: 1;
+  bottom: -170px;
+}
+#discover #discover-title .discover-text {
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 20px;
+  margin-right: -20px;
+  display: block;
+  transform: scaleY(0.85);
+  letter-spacing: 10px;
+  color: #ededed;
+}
+#discover #discover-title .discover-brand {
+  font-family: "Signature";
+  font-size: 40px;
+  color: #ededed;
+}
+
+#menu-section {
+  margin-bottom: 200px;
+}
+#menu-section #menu-hero {
+  height: 500px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5294117647), rgba(0, 0, 0, 0.5294117647)), url("@/assets/images/image11.jpg");
+  background-size: cover;
+  position: relative;
+}
+#menu-section #menu-hero .menu-info {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+#menu-section #menu-hero .menu-text {
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 20px;
+  margin-right: -20px;
+  display: block;
+  transform: scaleY(0.85);
+  letter-spacing: 10px;
+  text-align: center;
+  color: #ededed;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+#menu-section #menu-hero .menu-title {
+  font-family: "Signature";
+  font-size: 50px;
+  text-align: center;
+  color: #ededed;
+  margin-bottom: 150px;
+}
+#menu-section #menu-hero button {
+  display: block;
+  background: none;
+  border: 1px solid #ededed;
+  padding: 15px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 9px;
+  text-transform: uppercase;
+  color: #ededed;
+  margin-top: 30px;
+  transform: scaleY(0.9);
+  letter-spacing: 5px;
+}
+#menu-section #menu-hero .col {
+  height: 500px;
+}
+#menu-section #menu-hero .col-sm:nth-child(1), #menu-section #menu-hero .col-sm:nth-child(2) {
+  border-right: 1px solid #ededed;
+  height: 500px;
+}
+
+#events-section {
+  margin-bottom: 300px;
+}
+#events-section .event-text {
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 20px;
+  margin-right: -20px;
+  display: block;
+  transform: scaleY(0.85);
+  color: #ededed;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 10px;
+  margin-right: -10px;
+}
+#events-section .event-title {
+  font-family: "Signature";
+  font-size: 60px;
+  color: #ededed;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 65px;
+}
+#events-section .event-par {
+  font-size: 9px;
+  text-align: center;
+  max-width: 300px;
+  color: #ededed;
+  text-transform: uppercase;
+}
+#events-section button {
+  display: block;
+  background: none;
+  border: 1px solid #ededed;
+  padding: 15px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 9px;
+  text-transform: uppercase;
+  color: #ededed;
+  margin-top: 30px;
+  transform: scaleY(0.9);
+  letter-spacing: 5px;
+}
+#events-section #main-event {
+  width: 825px;
+  height: 333px;
+  position: relative;
+  left: 75px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5294117647), rgba(0, 0, 0, 0.5294117647)), url("@/assets/images/image12.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#events-section #side-event {
+  width: 320px;
+  height: 397px;
+  position: relative;
+  right: 75px;
+  background-color: #00513f;
+  z-index: 1;
+  bottom: -145px;
+}
+#events-section #side-event .event-text {
+  margin-bottom: 25px;
+}
+
+footer {
+  background-color: #000;
+  min-height: 400px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+footer .footer-copy {
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 20px;
+  margin-right: -20px;
+  display: block;
+  transform: scaleY(0.85);
+  color: #00513f;
+  margin-bottom: 40px;
+}
+footer .footer-line {
+  height: 50px;
+  border-left: 1px solid #00513f;
+  margin-left: auto;
+  margin-right: auto;
+  width: 0;
+  margin-bottom: 40px;
+}
+footer .row {
+  margin-bottom: 50px;
+}
+footer .footer-col-title {
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 20px;
+  margin-right: -20px;
+  display: block;
+  transform: scaleY(0.85);
+  letter-spacing: 2px;
+  margin-right: 0px;
+  color: #ededed;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+footer .footer-col-desc {
+  text-transform: uppercase;
+  font-size: 8px;
+  letter-spacing: 0;
+  line-height: 23px;
+  display: block;
+  transform: scaleY(0.85);
+  text-align: center;
+  color: #828282;
+}
+footer .copyright {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 8px;
+  transform: scaleY(0.85);
+  color: #00513f;
+  margin-bottom: 10px;
+}
+footer .copyright .credit {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 6px;
+  transform: scaleY(0.85);
+  color: #6c6c6c;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+footer .copy-icons {
+  text-align: center;
+  font-size: 10px;
+}
+footer i {
+  margin: 5px;
+  color: #00513f;
+}
+
+#menu-items {
+  background-color: #ededed;
+  min-height: 500px;
+  padding: 50px;
+  margin-bottom: 200px;
+}
+#menu-items .flex-child-container {
+  flex-grow: 1;
+}
+#menu-items nav {
+  border: none;
+}
+#menu-items nav a {
+  font-family: "Made";
+  color: #00513f;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+#menu-items nav a:link {
+  border: none;
+}
+#menu-items .nav-link.active {
+  background: none;
+  border: none;
+  color: #004232;
+}
+#menu-items .tab-content .row {
+  margin-top: 40px;
+}
+#menu-items .tab-content .clmn {
+  min-height: 600px;
+}
+#menu-items .tab-content .clmn2 {
+  min-height: 800px;
+}
+#menu-items .tab-content .clmn3 {
+  min-height: 600px;
+}
+#menu-items .tab-content .column {
+  border: 1px solid #828282;
+  padding: 25px;
+}
+#menu-items .tab-content .column .menu-section-title {
+  font-family: "Made";
+  color: #00513f;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+#menu-items .tab-content .column .menu-item, #menu-items .tab-content .column .price {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+}
+#menu-items .tab-content .column .menu-line {
+  border-bottom: 1px solid #828282;
+  width: 100%;
+  margin-right: 20px;
+  margin-left: 20px;
+  flex: 1;
+}
+#menu-items .tab-content .column .menu-line-item-wrap {
+  margin-bottom: 10px;
+}
+#menu-items .tab-content .column .menu-item-paragraph {
+  font-size: 10px;
+  max-width: 270px;
+}
+#menu-items .restaurant-terms {
+  text-transform: uppercase;
+  font-size: 8px;
+  letter-spacing: 0;
+  line-height: 23px;
+  display: block;
+  transform: scaleY(0.85);
+  text-align: center;
+  color: #00513f;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+#menu-gallery {
+  height: 500px;
+  background-color: #00513f;
+  margin-bottom: 200px;
+  overflow: hidden;
+  padding: 0;
+}
+#menu-gallery .swiper {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#menu-gallery .swiper-slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#about-desc {
+  background-color: #ededed;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  margin-bottom: 200px;
+  position: relative;
+}
+#about-desc div {
+  display: block;
+  font-size: 11px;
+  text-align: justify;
+  max-width: 555px;
+  color: #828282;
+  position: relative;
+}
+#about-desc img {
+  position: absolute;
+  width: 100px;
+  bottom: -80px;
+  right: 0;
+}
+
+#chef-section {
+  margin-bottom: 200px;
+}
+#chef-section #chef-photo {
+  width: 573px;
+  height: 578px;
+  background-image: url(@/assets/images/image4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#chef-section #chef-desc {
+  width: 498px;
+  height: 497px;
+  margin-left: -80px;
+  background-color: #ededed;
+  padding: 50px;
+}
+#chef-section #chef-desc .chef-text {
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 20px;
+  margin-right: -20px;
+  display: block;
+  transform: scaleY(0.85);
+  color: #00513f;
+  margin-bottom: 40px;
+  letter-spacing: 5px;
+  margin-right: -5px;
+}
+#chef-section #chef-desc .chef-title {
+  font-family: "Signature";
+  font-size: 60px;
+  color: #00513f;
+  margin-bottom: 240px;
+  line-height: 65px;
+  transform: translate(-70px, -40px);
+}
+#chef-section #chef-desc .chef-par {
+  font-size: 9px;
+  max-width: 300px;
+  color: #00513f;
+  text-transform: uppercase;
+}
+
+#about-gallery {
+  height: 265px;
+  background-image: url("@/assets/images/image13.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 200px;
+}
+
+#contact-actions {
+  margin-bottom: 200px;
+}
+#contact-actions .contact-desc {
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 0;
+  line-height: 23px;
+  display: block;
+  transform: scaleY(0.85);
+  text-align: center;
+  color: #828282;
+}
+#contact-actions .contact-title {
+  text-align: center;
+  font-family: "Signature";
+  color: #ededed;
+  font-size: 40px;
+}
+#contact-actions .contact-line {
+  height: 150px;
+  border-left: 1px solid #00513f;
+  width: 0;
+}
+#contact-actions .call-action, #contact-actions .location-action {
+  width: 173px;
+}
+
+#reservations {
+  margin-bottom: 130px;
+}
+#reservations .column {
+  height: 150px;
+  padding: 20px;
+}
+#reservations .column .rsv-text {
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 20px;
+  margin-right: -20px;
+  display: block;
+  transform: scaleY(0.85);
+  color: #ededed;
+  margin-bottom: 24px;
+  letter-spacing: 5px;
+  margin-left: 60px;
+  margin-top: 30px;
+}
+#reservations .column .rsv-title {
+  font-family: "Signature";
+  font-size: 60px;
+  color: #ededed;
+  margin-bottom: 240px;
+  line-height: 65px;
+  transform: translate(0, -40px);
+}
+#reservations .column button {
+  display: block;
+  background: #00513f;
+  padding: 15px;
+  text-align: center;
+  font-size: 9px;
+  text-transform: uppercase;
+  color: #ededed;
+  margin-top: 30px;
+  transform: scaleY(0.9);
+  letter-spacing: 5px;
+  width: 100%;
+  border: none;
+}
+#reservations .column input {
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: 1px solid #ededed;
+}
+#reservations .column input[placeholder] {
+  color: #ededed;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 0;
+  opacity: 1;
+}
+#reservations .column input:focus {
+  outline: none;
+}/*# sourceMappingURL=style.css.map */

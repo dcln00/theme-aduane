@@ -1,5 +1,4 @@
 <script>
-import { RouterLink, RouterView } from "vue-router";
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 import Preloader from "./components/Preloader.vue";
@@ -22,10 +21,16 @@ export default {
 </script>
 
 <template>
+<Preloader />
   <Header />
-  <Preloader />
     <main>
-      <RouterView />
+      <router-view v-slot="{Component, route}">
+        <transition name="fade" mode="out-in" appear>
+          <div :key="route.name">
+          <component :is="Component"/>
+          </div>
+        </transition>
+      </router-view>
     </main>
   <Footer />
 </template>
@@ -39,5 +44,14 @@ i {
 i:hover {
     color: $sec-color;
     transform: scale(0.9,0.9);
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: all 0.3s ease-out;
+}
+
+.fade-enter-from, .fade-leave-to {
+  transform: scale(0.9,0.9);
+  opacity: 0;
 }
 </style>
