@@ -6,12 +6,8 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import 'animate.css';
 import '@fortawesome/fontawesome-free/css/all.css';
 import LottieAnimation from "lottie-web-vue";
-import Datepicker from '@vuepic/vue-datepicker';
-import '@vuepic/vue-datepicker/dist/main.css';
 
 const app = createApp(App);
-
-app.component('Datepicker', Datepicker);
 
 app.use(LottieAnimation);
 
