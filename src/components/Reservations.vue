@@ -22,8 +22,11 @@
                                     <option value="6">6 Or More</option>
                                 </select>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 d-none d-sm-none d-md-none d-lg-flex">
                                 <input placeholder="Date" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+                            </div>
+                            <div class="col-sm-4 d-sm-block d-md-block d-lg-none">
+                                <input type="date" id="date" placeholder="Date">
                             </div>
                             <div class="col-sm-4">
                                 <select class="form-select" aria-label="Default select">

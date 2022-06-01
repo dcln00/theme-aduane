@@ -50,6 +50,15 @@
         z-index: 1;
         bottom: -145px;
 
+        a {
+            color: $text-color;
+            text-decoration: none;
+
+            &:hover {
+                color: $text-color;
+            }
+        }
+
         .event-text {
             margin-bottom:25px;
         }
